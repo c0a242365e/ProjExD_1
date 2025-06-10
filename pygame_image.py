@@ -19,9 +19,11 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
         
+        x=tmr%3200
         # screen.blit(kk_image, [300, 200])
-        screen.blit(bg_img, [-tmr, 0])
-        screen.blit(bg_img2, [-tmr+1600, 0])
+        screen.blit(bg_img, [-x, 0])
+        screen.blit(bg_img2, [-x+1600, 0])
+        screen.blit(bg_img, [-x+3200, 0])
         screen.blit(kk_image, [300, 200]) #背景を先に張り付ける
         pg.display.update()
         tmr += 1        
