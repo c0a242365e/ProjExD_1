@@ -19,6 +19,7 @@ def main():
         
         # screen.blit(kk_image, [300, 200])
         screen.blit(bg_img, [-tmr, 0])
+        screen.blit(bg_img, [-tmr+1600, 0])
         screen.blit(kk_image, [300, 200]) #背景を先に張り付ける
         pg.display.update()
         tmr += 1        
